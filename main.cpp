@@ -3,21 +3,19 @@
 
 
 int main() {
-
   CalcList calculator;
-
   int choice;
   int input;
   bool running = true;
 
   #ifdef __linux__ 
-        system("clear");
-    #elif  __APPLE__ 
-            system("clear");
-    #elif _WIN32
-            system("CLS");
-    #else
-    #endif
+    system("clear");
+  #elif  __APPLE__ 
+    system("clear");
+  #elif _WIN32
+    system("CLS");
+  #else
+  #endif
 
   while(running) {
 
@@ -47,6 +45,7 @@ int main() {
         std::cin >> input;
         calculator.newOperation(SUBTRACTION, input);
         break;
+        
       case 3:
         std::cout << "Enter the number you would like to multiply by: ";
         std::cin >> input;
@@ -56,7 +55,7 @@ int main() {
       case 4:
         std::cout << "Enter the number you would like to divide by: ";
         std::cin >> input;
-        
+
         try {
           calculator.newOperation(DIVISION, input);
         }
