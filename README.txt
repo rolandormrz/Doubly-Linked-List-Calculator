@@ -1,0 +1,1 @@
+Calculator built using a doubly linked list. Supports addition, subtraction, multiplication, division. The calculator also has an undo function for removing the last operation.
