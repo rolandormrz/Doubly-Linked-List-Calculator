@@ -45,7 +45,7 @@ int main() {
         std::cin >> input;
         calculator.newOperation(SUBTRACTION, input);
         break;
-        
+
       case 3:
         std::cout << "Enter the number you would like to multiply by: ";
         std::cin >> input;
@@ -60,7 +60,7 @@ int main() {
           calculator.newOperation(DIVISION, input);
         }
         catch(const std::invalid_argument& e) {
-          std::cout << "\nCannot divide by 0.\n" << std::endl;
+          std::cout << "\nCannot divide by 0." << std::endl;
         }
         break;
 
@@ -69,7 +69,7 @@ int main() {
           calculator.removeLastOperation();
         }
         catch(const std::invalid_argument& e) {
-          std::cout << "\nNo operations to remove.\n" << std::endl;
+          std::cout << "\nNo operations to remove." << std::endl;
         }
         break;
 
@@ -80,6 +80,7 @@ int main() {
       default:
         std::cout << "\nInvalid choice...\n" << std::endl;
     }
+
   }
 
   return 0;
