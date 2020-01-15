@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=
+CFLAGS= -std=c++11
 INC=
 LIB=
 
